@@ -10,7 +10,7 @@ from webapp.exception_layer.generic_exception.generic_exception import GenericEx
 log_collection_name = "data_loader"
 
 
-def loader_main(config_path: str, datasource: str,is_logging_enable=True,execution_id=None,executed_by=None) -> None:
+def loader_main(config_path: str, datasource:str,is_logging_enable=True,execution_id=None,executed_by=None) -> None:
     try:
         logger = get_logger_object_of_prediction(config_path=config_path, collection_name=log_collection_name,
                                                execution_id=execution_id, executed_by=executed_by)
